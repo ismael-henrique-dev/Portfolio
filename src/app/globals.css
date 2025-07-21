@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #ffffff;
@@ -8,8 +10,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-blue: #6f9de2;
+  --color-purple: #9871f3;
+
+  --color-danger: #f05d6c;
+
+  --font-lato: var(--font-lato);
+  --font-heebo: var(--font-heebo);
 }
 
 @media (prefers-color-scheme: dark) {
