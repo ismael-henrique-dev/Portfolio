@@ -27,6 +27,7 @@ export function Footer() {
             <Link
               key={link.name}
               href={link.href}
+              target='_blank'
               className='p-2 rounded-full border border-white/40 hover:bg-white/10 transition'
             >
               <LinkIcon />

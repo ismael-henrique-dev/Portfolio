@@ -11,12 +11,20 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { name: 'Instagram', href: '/', icon: Instagram },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/ismael.henriqu3',
+    icon: Instagram,
+  },
   {
     name: 'Linkedin',
-    href: '/about',
+    href: 'https://www.linkedin.com/in/ismael-henrique-dev',
     icon: Linkedin,
   },
-  { name: 'Github', href: '/projects', icon: Github },
-  { name: 'Gmail', href: '/contact-me', icon: Mail },
+  {
+    name: 'Github',
+    href: 'https://github.com/ismael-henrique-dev',
+    icon: Github,
+  },
+  { name: 'Gmail', href: 'mailto:ismael.henrique.dev@gmail.com', icon: Mail },
 ]
