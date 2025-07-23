@@ -10,7 +10,7 @@ export function Actions() {
   return (
     <div className='flex items-center gap-2'>
       <button
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         className='size-12 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition flex justify-center items-center'
       >
         <AnimatePresence mode='wait' initial={false}>
@@ -22,7 +22,7 @@ export function Actions() {
             transition={{ duration: 0.3 }}
             className='flex justify-center items-center'
           >
-            {theme === 'dark' ? <SunDim /> : <MoonStar />}
+            {theme && theme === 'dark' ? <SunDim /> : <MoonStar />}
           </motion.div>
         </AnimatePresence>
       </button>

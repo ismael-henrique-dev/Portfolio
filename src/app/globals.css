@@ -7,19 +7,19 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-surface-background-dark: #171023;
-  --color-surface-primary-dark: #2c243b;
-  --color-surface-secondary-dark: #413a4f;
+  /* Dark Theme */
+  --color-dark: #171023;
+  --color-surf1-dark: #2c243b;
+  --color-surf2-dark: #413a4f;
 
-  --color-surface-background-light: #f5f6f6;
-  --color-surface-primary-light: #ffffff;
-  --color-surface-secondary-light: #c9cfcf;
+  --color-txt1-dark: #f5f6f6;
 
-  --color-text-primary-dark: #f5f6f6;
-  --color-text-secondary-dark: #cdd0d4;
+  /* Light Theme */
+  --color-light: #f5f6f6;
+  --color-surf1-light: #ffffff;
+  --color-surf2-light: #c9cfcf;
 
-  --color-text-primary-light: #171023;
-  --color-text-secondary-light: #413a4f;
+  --color-txt2-light: #cdd0d4;
 
   --font-lato: var(--font-lato);
   --font-heebo: var(--font-heebo);

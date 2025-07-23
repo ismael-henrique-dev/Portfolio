@@ -20,8 +20,7 @@ export default function RootLayout({
       <body className={`${lato.variable} ${heebo.variable} antialiased`}>
         <ThemeProvider
           attribute='class'
-          defaultTheme='system'
-          enableSystem
+          defaultTheme='dark'
           storageKey='theme'
         >
           {children}

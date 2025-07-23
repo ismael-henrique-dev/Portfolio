@@ -1,5 +1,6 @@
 'use client'
 
+import { aboutMeItems, skills } from '@/app/lib/utils'
 import { motion } from 'motion/react'
 import Image from 'next/image'
 // import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa'
@@ -31,7 +32,7 @@ const timeline = [
 
 export function AboutMe() {
   return (
-    <section className='w-full flex flex-col items-center'>
+    <section className='w-full flex flex-col items-center dark:bg-surf1-dark'>
       <h2 className='font-heebo font-medium text-3xl mb-16 text-center'>
         Sobre mim
       </h2>
@@ -56,29 +57,39 @@ export function AboutMe() {
 
         {/* Info */}
         <div className='text-left space-y-6'>
-          <div>
-            <h3 className='font-lato font-black tracking-wide text-4xl mb-2'>
+          <div className='space-y-8'>
+            <h3 className='font-lato font-black tracking-wide text-4xl'>
               Ismael Henrique
             </h3>
-            <ul className='space-y-1 text-zinc-300'>
-              <li>🚀 Desenvolvedor frontend desde 2023.</li>
-              <li>🎓 Cursando informática.</li>
-              <li>📱 Interesse em desenvolvimento frontend e mobile.</li>
-              <li>💼 Em busca da primeira oportunidade como desenvolvedor.</li>
+            <ul className='space-y-8 text-zinc-300'>
+              {aboutMeItems.map((item, index) => {
+                const ItemIcon = item.icon
+
+                return (
+                  <li key={index} className='flex gap-3 items-center'>
+                    <span className='bg-blue-600 size-8 flex justify-center items-center rounded-lg'>
+                      <ItemIcon size={20} className='text-light' />
+                    </span>
+                    <h2 className='font-semibold font-lato text-xl tracking-wide text-txt2-light dark:text-txt1-dark'>
+                      {item.description}
+                    </h2>
+                  </li>
+                )
+              })}
             </ul>
           </div>
 
           {/* Skills */}
           <div className='flex flex-wrap gap-3 text-blue-400 text-2xl'>
-            {/* <FaHtml5 title='HTML5' />
-            <FaCss3Alt title='CSS3' />
-            <FaJs title='JavaScript' />
-            <SiTypescript title='TypeScript' />
-            <FaReact title='React' />
-            <SiNextdotjs title='Next.js' />
-            <FaNodeJs title='Node.js' />
-            <SiSupabase title='Supabase' />
-            <SiTailwindcss title='Tailwind CSS' /> */}
+            {skills.map((skill, index) => (
+              <Image
+                key={index}
+                src={skill.iconUrl}
+                alt={skill.alt}
+                width={32}
+                height={32}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -103,10 +114,12 @@ export function AboutMe() {
               <div className='w-4 h-4 rounded-full bg-blue-500 mb-4 lg:-mt-[14px] z-10 relative' />
 
               {/* Conteúdo */}
-              <h4 className='text-blue-500 font-bold text-lg mb-2'>
+              <h4 className='dark:text-txt1-dark text-text2-light font-bold text-lg mb-2'>
                 {item.year}
               </h4>
-              <p className='text-zinc-300'>{item.text}</p>
+              <p className='dark:text-txt1-dark text-text2-light'>
+                {item.text}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -138,8 +151,12 @@ export function AboutMe() {
             className='mb-10 relative'
           >
             <div className='absolute -left-[36px] top-0 w-5 h-5 bg-blue-500 rounded-full' />
-            <h4 className='font-bold text-lg text-blue-400'>{item.year}</h4>
-            <p className='text-zinc-300 mt-2 max-w-2xl'>{item.text}</p>
+            <h4 className='font-bold text-lg dark:text-txt1-dark text-text2-light'>
+              {item.year}
+            </h4>
+            <p className='dark:text-text-secondary-dark text-t-secondary-light mt-2 max-w-2xl'>
+              {item.text}
+            </p>
           </motion.div>
         ))}
       </div>

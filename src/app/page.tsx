@@ -9,9 +9,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center justify-items-center min-h-screen gap-16 bg-surface-background-light dark:bg-surface-background-dark'>
+    <div className='flex flex-col items-center justify-items-center min-h-screen bg-light dark:bg-dark'>
       <Header />
-      <main className='flex flex-col gap-16 items-center w-full lg:p-16 p-5'>
+      <main className='flex flex-col gap-16 items-center w-full lg:px-16 lg:py-2 p-5'>
         <HeroSection />
         <AboutMe />
       </main>

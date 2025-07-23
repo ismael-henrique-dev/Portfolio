@@ -21,7 +21,7 @@ export function HeroSection() {
           width={384}
           height={384}
           src={'./images/avatar.svg'}
-          alt='Foto de perfil do Gabriel Borges'
+          alt='Foto de perfil do Ismael Henrique'
         />
       </motion.div>
 
@@ -32,7 +32,7 @@ export function HeroSection() {
         exit={{ opacity: 0, x: 200 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className='font-lato font-black tracking-wide lg:text-6xl text-2xl'>
+        <h2 className='font-lato font-black tracking-wide lg:text-6xl text-2xl dark:'>
           Ismael Henrique
         </h2>
         <span className='font-lato font-semibold tracking-wide lg:text-2xl text-xl'>
@@ -52,9 +52,9 @@ export function HeroSection() {
               key={link.name}
               href={link.href}
               target='_blank'
-              className='p-2 rounded-full border border-white/40 hover:bg-white/10 transition'
+              className='p-2 rounded-full border  hover:bg-dark/10 border-surf2-light dark:border-surf2-dark dark:hover:bg-white/10 transition'
             >
-              <LinkIcon />
+              <LinkIcon className='dark:text-surf1-light text-surf2-dark' />
             </Link>
           )
         })}

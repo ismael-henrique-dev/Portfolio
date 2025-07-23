@@ -8,11 +8,9 @@ import { Drawer, DrawerContent, DrawerTrigger } from '@/app/ui/drawer'
 import { Menu } from 'lucide-react'
 
 export function Header() {
-
-
   return (
     <motion.header
-      className='flex items-center justify-between w-full px-6 md:px-16 py-6 bg-surface-background-light dark:bg-surface-background-dark'
+      className='flex items-center justify-between w-full px-6 md:px-16 py-6 bg-light dark:bg-dark'
       initial={{ translateY: -100 }}
       animate={{ translateY: 0 }}
       transition={{ duration: 0.5 }}
@@ -39,7 +37,7 @@ export function Header() {
           </button>
         </DrawerTrigger>
 
-        <DrawerContent>
+        <DrawerContent className='dark:bg-surface-background-dark bg-surface-background-light'>
           <div className='flex flex-col gap-4 p-4'>
             {navLinks.map((link) => (
               <Link

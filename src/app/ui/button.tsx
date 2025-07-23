@@ -10,7 +10,10 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button className='bg-blue-700 flex px-6 py-4 rounded-lg gap-2 cursor-pointer font-lato font-medium text-xl text-text-primary-dark' {...props}>
+    <button
+      className='bg-blue-700 flex px-6 py-4 rounded-lg gap-2 cursor-pointer font-lato font-medium text-xl text-light'
+      {...props}
+    >
       {children} {Icon && <Icon />}
     </button>
   )
