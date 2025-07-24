@@ -13,13 +13,15 @@
   --color-surf2-dark: #413a4f;
 
   --color-txt1-dark: #f5f6f6;
+  --color-txt2-dark: #cdd0d4;
 
   /* Light Theme */
   --color-light: #f5f6f6;
   --color-surf1-light: #ffffff;
   --color-surf2-light: #c9cfcf;
 
-  --color-txt2-light: #cdd0d4;
+  --color-txt1-light: #171023;
+  --color-txt2-light: #413a4f;
 
   --font-lato: var(--font-lato);
   --font-heebo: var(--font-heebo);

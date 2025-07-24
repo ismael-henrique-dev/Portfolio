@@ -61,3 +61,22 @@ export const skills = [
   { iconUrl: '/techs/tailwindcss.svg', alt: 'Tailwind CSS icon logo' },
   { iconUrl: '/techs/git.svg', alt: 'Gui icon logo' },
 ]
+
+export const timeline = [
+  {
+    year: '2023',
+    text: 'Comecei o curso técnico integrado em Informática no IFCE, onde aprendi fundamentos de lógica de programação, HTML, CSS e JavaScript. Foi meu primeiro contato prático com desenvolvimento web.',
+  },
+  {
+    year: '2024',
+    text: 'Aprofundei meus estudos em React.js e TypeScript, criando projetos pessoais para consolidar o aprendizado. Também comecei a entender melhor a integração com backend.',
+  },
+  {
+    year: '2025',
+    text: 'Realizei meu primeiro freela, desenvolvendo telas de login e cadastro com autenticação via Supabase, usando Next.js. Segui estudando clean code, arquitetura de projetos e boas práticas.',
+  },
+  {
+    year: 'Atualmente',
+    text: 'Sigo evoluindo com projetos próprios e fortalecendo minha base técnica, enquanto busco minha primeira oportunidade profissional como desenvolvedor.',
+  },
+]
