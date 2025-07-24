@@ -119,7 +119,7 @@ export function AboutMe() {
       </div>
 
       {/* Timeline Mobile */}
-      <div className='lg:hidden mt-8 border-l-4 border-blue-500 pl-6 relative'>
+      {/* <div className='lg:hidden mt-8 border-l-4 border-blue-500 pl-6 relative'>
         {timeline.map((item, idx) => (
           <motion.div
             key={idx}
@@ -137,7 +137,7 @@ export function AboutMe() {
             </p>
           </motion.div>
         ))}
-      </div>
+      </div> */}
     </section>
   )
 }
