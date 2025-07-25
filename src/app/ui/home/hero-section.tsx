@@ -60,7 +60,7 @@ export function HeroSection() {
         })}
       </div>
 
-      <Button>Download CV</Button>
+      <Button variant='blue'>Download CV</Button>
     </section>
   )
 }
