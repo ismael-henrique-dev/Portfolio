@@ -1,6 +1,6 @@
 'use client'
 
-import { aboutMeItems, skills, timeline } from '@/app/lib/utils'
+import { aboutMeItems, skills, timeline } from '@/lib/utils'
 import { motion } from 'motion/react'
 import Image from 'next/image'
 

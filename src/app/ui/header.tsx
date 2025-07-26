@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { navLinks } from '../lib/utils'
+import { navLinks } from '@/lib/utils'
 import { Actions } from './actions'
 import { motion } from 'motion/react'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/app/ui/drawer'

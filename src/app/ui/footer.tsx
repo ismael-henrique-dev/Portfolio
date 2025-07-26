@@ -1,5 +1,5 @@
 import { Mail, Phone } from 'lucide-react'
-import { navLinks, socialLinks } from '../lib/utils'
+import { navLinks, socialLinks } from '@/lib/utils'
 import Link from 'next/link'
 
 export function Footer() {

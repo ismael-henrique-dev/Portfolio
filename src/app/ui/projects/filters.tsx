@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Button } from '../button'
 
 const options = [
-  { value: 'all', name: 'All' },
+  { value: 'all', name: 'Todos' },
   { value: 'reactjs', name: 'React.js' },
   { value: 'nextjs', name: 'Next.js' },
   { value: 'typescript', name: 'TypeScript' },
@@ -37,7 +37,6 @@ export function Filters() {
 
   return (
     <div className='flex gap-6 flex-wrap justify-center'>
-      {/* <h1>Selecionado: {selected}</h1>   */}
       {options.map((option, index) => (
         <Button
           variant={selected === option.value ? 'blue' : 'default'}

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { ThemeProvider } from 'next-themes'
 import { heebo, lato } from './ui/fonts'
 import './globals.css'
+import { Header } from './ui/header'
+import { Footer } from './ui/footer'
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +37,9 @@ export default function RootLayout({
     <html lang='pt-br' suppressHydrationWarning>
       <body className={`${lato.variable} ${heebo.variable} antialiased`}>
         <ThemeProvider attribute='class' defaultTheme='dark' storageKey='theme'>
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

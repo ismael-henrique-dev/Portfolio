@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { socialLinks } from '@/app/lib/utils'
+import { socialLinks } from '@/lib/utils'
 import { Button } from '../button'
 import Link from 'next/link'
 import Image from 'next/image'
