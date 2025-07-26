@@ -19,7 +19,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang='pt-br' suppressHydrationWarning>
-      <body className={`${lato.variable} ${heebo.variable} antialiased`}>
+      <body className={`${lato.variable} ${heebo.variable} antialiased bg-light dark:bg-dark`}>
         <ThemeProvider attribute='class' defaultTheme='dark' storageKey='theme'>
           <Header />
           {children}

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className='flex flex-col gap-16 items-center w-full lg:px-16 lg:pb-16 p-5 bg-light dark:bg-dark'>
+    <main className='flex flex-col gap-16 items-center w-full lg:px-16 lg:pb-16 p-5 '>
       <HeroSection />
       <AboutMe />
       <ProjectsSection />
