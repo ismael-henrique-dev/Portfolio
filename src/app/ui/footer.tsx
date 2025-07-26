@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className='bg-[#181325] text-white px-6 py-10 text-center flex flex-col items-center gap-6 w-full'>
+    <footer className='dark:bg-surf1-dark bg-surf2-light dark:text-surf2-light text-surf2-dark px-6 text-center flex flex-col items-center gap-6 w-full pt-10 pb-6'>
       {/* Links de navegação */}
       <nav className='flex flex-wrap justify-center gap-8 text-sm'>
         {navLinks.map((link) => (
@@ -28,7 +28,8 @@ export function Footer() {
               key={link.name}
               href={link.href}
               target='_blank'
-              className='p-2 rounded-full border border-white/40 hover:bg-white/10 transition'
+              className='p-2 rounded-full border  hover:bg-dark/10 border-txt2-light dark:border-surf2-dark dark:hover:bg-white/10 transition'
+              aria-label={`Abrir ${link.name}`}
             >
               <LinkIcon />
             </Link>
@@ -37,22 +38,27 @@ export function Footer() {
       </div>
 
       {/* Contato */}
-      <div className='flex flex-col sm:flex-row gap-4 items-center justify-center text-sm'>
-        <div className='flex items-center gap-2'>
-          <Mail className='text-white' />
-          <span>ismael.henrique.dev@gmail.com</span>
+      <address className='flex flex-col sm:flex-row gap-4 items-center justify-center text-sm not-italic'>
+        <div className='flex items-center gap-2 '>
+          <Mail />
+          <span className='font-lato font-bold text-xl tracking-[3%]'>
+            ismael.henrique.dev@gmail.com
+          </span>
         </div>
         <div className='flex items-center gap-2'>
-          <Phone className='text-white' />
-          <span>(88) 99337-7174</span>
+          <Phone />
+          <span className='font-lato font-bold text-xl tracking-[3%]'>
+            (88) 99337-7174
+          </span>
         </div>
-      </div>
-
-      {/* Linha divisória */}
-      <div className='w-[160px] h-px bg-white/30 mt-4' />
+      </address>
 
       {/* Créditos */}
-      <strong className='text-xs text-white/60'>By Ismael Henrique</strong>
+      <div className='w-10rem lg:w-30rem border-t border-t-txt2-light dark:border-t-txt2-dark pt-2'>
+        <strong className='font-lato font-bold tracking-[3%]'>
+          By Ismael Henrique
+        </strong>
+      </div>
     </footer>
   )
 }
