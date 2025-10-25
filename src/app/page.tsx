@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     url: 'https://ismaelhenrique-portfolio.vercel.app',
     title: 'Portfolio | Ismael Henrique',
     description:
-      'Desenvolvedor Front-End com experiência em React, Next.js, TypeScript e design responsivo. Veja meus projetos, conheça minha trajetória e entre em contato.',
+      'Sou Dev Front-End. Veja meus projetos e conheça minha jornada com React, Next.js e TypeScript.',
     siteName: `'Ismael's portfolio`,
 
     images: [

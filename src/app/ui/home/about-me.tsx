@@ -11,17 +11,17 @@ export function AboutMe() {
         Sobre mim
       </h2>
 
-      <div className='w-full justify-center lg:space-x-16 lg:items-start items-center flex flex-col lg:flex-row  gap-12'>
+      <div className='w-full justify-center lg:space-x-16 lg:items-start items-center flex flex-col xl:flex-row  gap-12'>
         {/* Avatar */}
         <motion.div
-          initial={{ opacity: 0, x: -200, scale: 0.5 }}
-          whileInView={{ opacity: 1, x: 0, scale: 1 }}
-          exit={{ opacity: 0, x: -200, scale: 0.5 }}
+          // initial={{ opacity: 0, x: -200, scale: 0.5 }}
+          // whileInView={{ opacity: 1, x: 0, scale: 1 }}
+          // exit={{ opacity: 0, x: -200, scale: 0.5 }}
           transition={{ duration: 0.5 }}
           className='origin-center'
         >
           <Image
-            className='w-[300px] h-[300px] lg:w-[440px] lg:h-[440px] mb-6 lg:mb-0 rounded-lg object-cover'
+            className='w-[300px] h-[300px]   xl:h-[440px] mb-6 lg:mb-0 rounded-lg object-cover'
             width={440}
             height={440}
             src={'/images/avatar.svg'}

@@ -27,9 +27,9 @@ export function HeroSection() {
 
       <motion.div
         className='flex items-center flex-col gap-4 text-center'
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 200 }}
         transition={{ duration: 0.5 }}
       >
         <h2 className='font-lato font-black tracking-wide lg:text-6xl text-2xl dark:'>

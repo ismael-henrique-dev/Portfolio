@@ -6,6 +6,7 @@ import { Actions } from './actions'
 import { motion } from 'motion/react'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/app/ui/drawer'
 import { Menu } from 'lucide-react'
+import { DialogTitle } from '@radix-ui/react-dialog'
 
 export function Header() {
   return (
@@ -30,20 +31,22 @@ export function Header() {
       <Drawer direction='left'>
         <DrawerTrigger asChild>
           <button
-            className='lg:hidden flex flex-col justify-between size-10'
+            className='lg:hidden size-12 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition flex justify-center items-center'
             aria-label='Menu'
           >
-            <Menu size={40} />
+            <Menu />
           </button>
         </DrawerTrigger>
 
-        <DrawerContent className='dark:bg-surface-background-dark bg-surface-background-light'>
+        <DialogTitle></DialogTitle>
+
+        <DrawerContent className='dark:bg-surf1-dark bg-surf1-light'>
           <div className='flex flex-col gap-4 p-4'>
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className='text-xl font-medium text-zinc-900 dark:text-zinc-100'
+                className='text-xl font-lato font-medium text-zinc-900 dark:text-zinc-100'
               >
                 {link.name}
               </Link>
