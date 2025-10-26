@@ -3,10 +3,10 @@ import { Filters } from '../projects/filters'
 import { Projects } from '../projects/list'
 import { FiltersSkeleton } from '../skeletons'
 
-export function ProjectsSection() {
+export function ContactMeSection() {
   return (
-    <section id='projects' className='w-full flex flex-col items-center justify-center gap-16'>
-      <h2 className='font-heebo font-medium text-3xl text-center'>Projetos</h2>
+    <section id='contact-me' className='w-full flex flex-col items-center justify-center gap-16'>
+      <h2 className='font-heebo font-medium text-3xl text-center'>Entre em contato comigo</h2>
       <Suspense fallback={<FiltersSkeleton />}>
         <Filters />
       </Suspense>

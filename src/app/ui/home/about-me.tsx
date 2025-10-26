@@ -4,9 +4,12 @@ import { aboutMeItems, skills, timeline } from '@/lib/utils'
 import { motion } from 'motion/react'
 import Image from 'next/image'
 
-export function AboutMe() {
+export function AboutMeSection() {
   return (
-    <section className='w-full space-y-8 flex flex-col items-center px-5 py-8 rounded-2xl dark:bg-surf1-dark'>
+    <section
+      id='about-me'
+      className='w-full space-y-8 flex flex-col items-center px-5 py-8 rounded-2xl dark:bg-surf1-dark'
+    >
       <h2 className='font-heebo font-medium text-3xl mb-16 text-center'>
         Sobre mim
       </h2>

@@ -21,7 +21,7 @@ export function Header() {
           <Link
             key={link.name}
             href={link.href}
-            className='font-lato text-xl font-medium'
+            className='font-lato text-xl font-medium hover:underline underline-offset-3'
           >
             {link.name}
           </Link>

@@ -16,13 +16,13 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const navLinks = [
-  { name: 'Home', href: '/' },
+  { name: 'Home', href: '#' },
   {
     name: 'Sobre mim',
-    href: '/about',
+    href: '#about-me',
   },
-  { name: 'Projetos', href: '/projects' },
-  { name: 'Entre em contato comigo', href: '/contact-me' },
+  { name: 'Projetos', href: '#projects' },
+  { name: 'Entre em contato comigo', href: '#contact-me' },
 ]
 
 export const socialLinks = [
