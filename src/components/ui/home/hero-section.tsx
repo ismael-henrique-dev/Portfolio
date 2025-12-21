@@ -5,8 +5,11 @@ import { socialLinks } from '@/lib/utils'
 import { Button } from '../button'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export function HeroSection() {
+  const t = useTranslations('HomePage')
+
   return (
     <section className='flex flex-col items-center gap-6'>
       <motion.div
@@ -36,6 +39,7 @@ export function HeroSection() {
           Ismael Henrique
         </h2>
         <span className='font-lato font-semibold tracking-wide lg:text-2xl text-xl'>
+          {t('title')}
           Desenvolvedor frontend e mobile
         </span>
         <p className='font-heebo text-base font-normal'>

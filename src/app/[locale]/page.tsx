@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { HeroSection } from './ui/home/hero-section'
-import { AboutMeSection } from './ui/home/about-me'
-import { ProjectsSection } from './ui/home/projects'
-import { ContactMeSection } from './ui/home/contact-me'
+
+import { AboutMeSection } from '@/components/ui/home/about-me'
+import { ContactMeSection } from '@/components/ui/home/contact-me'
+import { HeroSection } from '@/components/ui/home/hero-section'
+import { ProjectsSection } from '@/components/ui/home/projects'
 
 export const metadata: Metadata = {
   title: 'Home | Ismael Henrique',

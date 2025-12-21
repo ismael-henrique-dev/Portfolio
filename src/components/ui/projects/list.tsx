@@ -1,4 +1,5 @@
-import { ProjectCard } from './card'
+import { ProjectCard } from "./card";
+
 
 export function Projects() {
   return (

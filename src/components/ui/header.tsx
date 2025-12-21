@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { navLinks } from '@/lib/utils'
 import { Actions } from './actions'
 import { motion } from 'motion/react'
-import { Drawer, DrawerContent, DrawerTrigger } from '@/app/ui/drawer'
+import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { Menu } from 'lucide-react'
 import { DialogTitle } from '@radix-ui/react-dialog'
 
