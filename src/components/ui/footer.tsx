@@ -1,19 +1,21 @@
 import { Mail, Phone } from 'lucide-react'
 import { navLinks, socialLinks } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
 export function Footer() {
+  const t = useTranslations('HomePage.nav')
   return (
     <footer className='dark:bg-surf1-dark bg-surf2-light dark:text-surf2-light text-surf2-dark px-6 text-center flex flex-col items-center gap-6 w-full pt-10 pb-6'>
       {/* Links de navegação */}
       <nav className='flex flex-wrap justify-center gap-8 text-sm'>
         {navLinks.map((link) => (
           <Link
-            key={link.name}
+            key={link.key}
             href={link.href}
             className='font-lato text-xl font-medium hover:underline underline-offset-3'
           >
-            {link.name}
+            {t(link.key)}
           </Link>
         ))}
       </nav>

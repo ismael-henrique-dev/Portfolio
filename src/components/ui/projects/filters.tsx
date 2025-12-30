@@ -3,6 +3,7 @@
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { useState } from 'react'
 import { Button } from '../button'
+import { useTranslations } from 'next-intl'
 
 const options = [
   { value: 'all', name: 'Todos' },
@@ -13,6 +14,8 @@ const options = [
 ]
 
 export function Filters() {
+  const t = useTranslations('HomePage.projects.filters')
+
   const searchParams = useSearchParams()
   const pathname = usePathname()
   const { replace } = useRouter()
@@ -43,7 +46,9 @@ export function Filters() {
           key={index}
           onClick={() => handleSelectTech(option.value)}
         >
-          {option.name}
+          {option.value === 'all'
+            ? t('all')
+            : option.value.charAt(0).toUpperCase() + option.value.slice(1)}
         </Button>
       ))}
     </div>

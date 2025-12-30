@@ -7,8 +7,11 @@ import { motion } from 'motion/react'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { Menu } from 'lucide-react'
 import { DialogTitle } from '@radix-ui/react-dialog'
+import { useTranslations } from 'next-intl'
 
 export function Header() {
+  const t = useTranslations('HomePage.nav')
+
   return (
     <motion.header
       className='flex items-center justify-between w-full px-6 md:px-16 py-6 bg-light dark:bg-dark'
@@ -19,11 +22,11 @@ export function Header() {
       <nav className='hidden lg:flex flex-wrap items-center gap-8 text-zinc-800 dark:text-zinc-100'>
         {navLinks.map((link) => (
           <Link
-            key={link.name}
+            key={link.key}
             href={link.href}
             className='font-lato text-xl font-medium hover:underline underline-offset-3'
           >
-            {link.name}
+            {t(link.key)}
           </Link>
         ))}
       </nav>
@@ -44,11 +47,11 @@ export function Header() {
           <div className='flex flex-col gap-4 p-4'>
             {navLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.key}
                 href={link.href}
-                className='text-xl font-lato font-medium text-zinc-900 dark:text-zinc-100'
+                className='font-lato text-xl font-medium hover:underline underline-offset-3'
               >
-                {link.name}
+                {t(link.key)}
               </Link>
             ))}
           </div>

@@ -1,5 +1,56 @@
 {
   "HomePage": {
-    "title": "Olá mundo!"
+    "hero": {
+      "greeting": "Olá mundo!",
+      "role": "Desenvolvedor frontend e mobile",
+      "description": "Apaixonado por tecnologia e por resolver problemas através do código.",
+      "cv_button": "Download CV"
+    },
+    "about": {
+      "title": "Sobre mim",
+      "items": {
+        "dev": "Desenvolvedor frontend desde 2023.",
+        "study": "Cursando informática.",
+        "interest": "Interesse em desenvolvimento frontend e mobile.",
+        "search": "Em busca de uma nova oportunidade como desenvolvedor."
+      },
+      "timeline": {
+        "2023": "Comecei o curso técnico integrado em Informática no IFCE, onde aprendi fundamentos de lógica de programação, HTML, CSS e JavaScript. Foi meu primeiro contato prático com desenvolvimento web.",
+        "2024": "Aprofundei meus estudos em React.js e TypeScript, criando projetos pessoais para consolidar o aprendizado. Também comecei a entender melhor a integração com backend.",
+        "2025": "Realizei meu primeiro freela, desenvolvendo telas de login e cadastro com autenticação via Supabase, usando Next.js. Segui estudando clean code, arquitetura de projetos e boas práticas.",
+        "currentYear": "Atualmente",
+        "current": "Sigo evoluindo com projetos próprios e fortalecendo minha base técnica, enquanto busco minha primeira oportunidade profissional como desenvolvedor."
+      }
+    },
+    "projects": {
+      "title": "Projetos",
+      "filters": {
+        "all": "Todos"
+      }
+    },
+    "contact": {
+      "title": "Entre em contato comigo",
+      "success": "Mensagem enviada com sucesso!",
+      "sending": "Enviando...",
+      "button": "Enviar mensagem",
+      "placeholders": {
+        "name": "Nome",
+        "email": "Email",
+        "phone": "Telefone",
+        "description": "Detalhes do projeto"
+      },
+      "errors": {
+        "name": "Informe seu nome.",
+        "email": "Informe um email válido.",
+        "phone": "Informe seu número de telefone.",
+        "description": "Informe os detalhes do projeto."
+      }
+    },
+    "nav": {
+      "home": "Home",
+      "about": "Sobre mim",
+      "projects": "Projetos",
+      "contact": "Entre em contato"
+    }
   }
 }

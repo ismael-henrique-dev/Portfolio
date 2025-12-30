@@ -1,5 +1,56 @@
 {
   "HomePage": {
-    "title": "Hello world!"
+    "hero": {
+      "greeting": "Hello world!",
+      "role": "Frontend and Mobile Developer",
+      "description": "Passionate about technology and solving problems through code.",
+      "cv_button": "Download CV"
+    },
+    "about": {
+      "title": "About me",
+      "items": {
+        "dev": "Frontend developer since 2023.",
+        "study": "Studying Computer Science.",
+        "interest": "Interest in frontend and mobile development.",
+        "search": "Looking for a new opportunity as a developer."
+      },
+      "timeline": {
+        "2023": "Started the integrated technical course in Informatics at IFCE, where I learned the fundamentals of programming logic, HTML, CSS, and JavaScript. It was my first practical contact with web development.",
+        "2024": "Deepened my studies in React.js and TypeScript, creating personal projects to consolidate learning. I also began to better understand backend integration.",
+        "2025": "Performed my first freelance job, developing login and registration screens with authentication via Supabase, using Next.js. Continued studying clean code, project architecture, and best practices.",
+        "currentYear": "Currently",
+        "current": "I continue to evolve with my own projects and strengthen my technical base while seeking my first professional opportunity as a developer."
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "filters": {
+        "all": "All"
+      }
+    },
+    "contact": {
+      "title": "Contact me",
+      "success": "Message sent successfully!",
+      "sending": "Sending...",
+      "button": "Send message",
+      "placeholders": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "description": "Project details"
+      },
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email.",
+        "phone": "Please enter your phone number.",
+        "description": "Please enter project details."
+      }
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About me",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
   }
 }

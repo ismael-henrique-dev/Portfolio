@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 export function HeroSection() {
-  const t = useTranslations('HomePage')
+  const t = useTranslations('HomePage.hero')
 
   return (
     <section className='flex flex-col items-center gap-6'>
@@ -39,12 +39,9 @@ export function HeroSection() {
           Ismael Henrique
         </h2>
         <span className='font-lato font-semibold tracking-wide lg:text-2xl text-xl'>
-          {t('title')}
-          Desenvolvedor frontend e mobile
+          {t('role')}
         </span>
-        <p className='font-heebo text-base font-normal'>
-          Apaixonado por tecnologia e por resolver problemas através do código.
-        </p>
+        <p className='font-heebo text-base font-normal'>{t('description')}</p>
       </motion.div>
 
       <div className='flex gap-4 text-lg mb-4'>

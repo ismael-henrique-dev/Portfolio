@@ -1,25 +1,34 @@
 'use client'
 
+import { useMemo } from 'react'
 import z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm as useReactHookForm } from 'react-hook-form'
+import { useForm as useFormspree } from '@formspree/react'
+import { useTranslations } from 'next-intl'
 import { Button } from '../button'
 import { Input } from '../input'
 import { TextArea } from '../text-area'
-import { useForm as useReactHookForm } from 'react-hook-form'
-import { useForm as useFormspree, ValidationError } from '@formspree/react'
 
 const FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID
 
-const contactMeFormSchema = z.object({
-  name: z.string().min(1, 'Informe seu nome.'),
-  email: z.string().email('Informe um email válido.'),
-  phone: z.string().min(1, 'Informe seu número de telefone.'),
-  description: z.string().min(1, 'Informe os detalhes do projeto.'),
-})
-
-type ContactMeFormData = z.infer<typeof contactMeFormSchema>
-
 export function ContactMeForm() {
+  const t = useTranslations('HomePage.contact')
+
+  // Schema dinâmico com traduções
+  const contactMeFormSchema = useMemo(
+    () =>
+      z.object({
+        name: z.string().min(1, t('errors.name')),
+        email: z.string().email(t('errors.email')),
+        phone: z.string().min(1, t('errors.phone')),
+        description: z.string().min(1, t('errors.description')),
+      }),
+    [t]
+  )
+
+  type ContactMeFormData = z.infer<typeof contactMeFormSchema>
+
   const {
     register,
     handleSubmit,
@@ -33,18 +42,11 @@ export function ContactMeForm() {
 
   async function onSubmit(data: ContactMeFormData) {
     await sendToFormspree(data)
-
-    if (formspreeState.succeeded) {
-      reset()
-    }
+    if (formspreeState.succeeded) reset()
   }
 
   if (formspreeState.succeeded) {
-    return (
-      <p className='text-green-500 font-semibold'>
-        Mensagem enviada com sucesso!
-      </p>
-    )
+    return <p className='text-green-500 font-semibold'>{t('success')}</p>
   }
 
   return (
@@ -53,7 +55,7 @@ export function ContactMeForm() {
         <div className='space-y-8'>
           {/* Nome */}
           <div className='space-y-1'>
-            <Input placeholder='Nome' {...register('name')} />
+            <Input placeholder={t('placeholders.name')} {...register('name')} />
             {errors.name && (
               <span className='text-red-500 text-sm'>
                 {errors.name.message}
@@ -63,11 +65,10 @@ export function ContactMeForm() {
 
           {/* Email */}
           <div className='space-y-1'>
-            <Input type='email' placeholder='Email' {...register('email')} />
-            <ValidationError
-              prefix='Email'
-              field='email'
-              errors={formspreeState.errors}
+            <Input
+              type='email'
+              placeholder={t('placeholders.email')}
+              {...register('email')}
             />
             {errors.email && (
               <span className='text-red-500 text-sm'>
@@ -78,7 +79,11 @@ export function ContactMeForm() {
 
           {/* Telefone */}
           <div className='space-y-1'>
-            <Input type='tel' placeholder='Telefone' {...register('phone')} />
+            <Input
+              type='tel'
+              placeholder={t('placeholders.phone')}
+              {...register('phone')}
+            />
             {errors.phone && (
               <span className='text-red-500 text-sm'>
                 {errors.phone.message}
@@ -88,16 +93,10 @@ export function ContactMeForm() {
         </div>
 
         <div className='flex flex-col items-end space-y-8'>
-          {/* Descrição */}
           <div className='w-full space-y-1'>
             <TextArea
-              placeholder='Detalhes do projeto'
+              placeholder={t('placeholders.description')}
               {...register('description')}
-            />
-            <ValidationError
-              prefix='Description'
-              field='description'
-              errors={formspreeState.errors}
             />
             {errors.description && (
               <span className='text-red-500 text-sm'>
@@ -106,13 +105,12 @@ export function ContactMeForm() {
             )}
           </div>
 
-          {/* Botão */}
           <Button
             variant='blue'
             type='submit'
             disabled={formspreeState.submitting}
           >
-            {formspreeState.submitting ? 'Enviando...' : 'Enviar mensagem'}
+            {formspreeState.submitting ? t('sending') : t('button')}
           </Button>
         </div>
       </div>
