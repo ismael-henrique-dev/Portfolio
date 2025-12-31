@@ -14,7 +14,7 @@ export function Button({
   return (
     <button
       className={clsx(
-        'flex px-6 py-4 rounded-lg gap-2 cursor-pointer font-lato font-medium text-xl transition-all',
+        'flex px-6 py-4 rounded-lg gap-2 cursor-pointer font-lato font-medium text-xl transition-all shadow-xs',
         {
           'dark:bg-surf1-dark bg-surf1-light': variant === 'default',
           'bg-blue-700 text-light': variant === 'blue',

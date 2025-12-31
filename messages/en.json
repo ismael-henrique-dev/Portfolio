@@ -52,5 +52,15 @@
       "projects": "Projects",
       "contact": "Contact"
     }
+  },
+  "ProjectDetails": {
+    "back_button": "Go back",
+    "team_label": "Team",
+    "description_label": "Description",
+    "features_label": "Features",
+    "sidebar_title": "Take a look at the project:",
+    "view_site": "View site",
+    "repository": "Repository",
+    "not_found": "Project not found."
   }
 }

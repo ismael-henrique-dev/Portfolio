@@ -1,0 +1,89 @@
+[
+  {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "title": {
+      "pt-BR": "App de E-commerce",
+      "en": "E-commerce App"
+    },
+    "description": {
+      "pt-BR": "Uma plataforma completa de vendas online com checkout integrado.",
+      "en": "A complete online sales platform with integrated checkout."
+    },
+    "technology": "TypeScript",
+    "createdAt": "2023-10-27T10:30:00Z",
+    "links": {
+      "github": "https://github.com/usuario/projeto-vendas",
+      "deploy": "https://vendas-online.com"
+    },
+    "pictures": [
+      "/images/projects/ecommerce-thumb.jpg",
+      "/images/projects/ecommerce-dash.png"
+    ],
+    "features": {
+      "pt-BR": [
+        "Carrinho de compras",
+        "Pagamento via Pix",
+        "Painel Administrativo"
+      ],
+      "en": ["Shopping Cart", "Pix Payment", "Admin Panel"]
+    },
+    "team": ["Ana Silva", "Bruno Souza"]
+  },
+  {
+    "id": "713e8400-e29b-41d4-a716-446655440111",
+    "title": {
+      "pt-BR": "Gerenciador de Tarefas",
+      "en": "Task Manager"
+    },
+    "description": {
+      "pt-BR": "Gerenciador de tarefas produtivo focado em metodologias ágeis.",
+      "en": "Productive task manager focused on agile methodologies."
+    },
+    "technology": "React",
+    "createdAt": "2023-11-15T14:20:00Z",
+    "links": {
+      "github": "https://github.com/usuario/task-manager",
+      "deploy": "https://mytasks.app"
+    },
+    "pictures": ["/images/projects/tasks-1.jpg"],
+    "features": {
+      "pt-BR": [
+        "Arrastar e Soltar",
+        "Notificações em tempo real",
+        "Modo Escuro"
+      ],
+      "en": ["Drag and Drop", "Real-time notifications", "Dark Mode"]
+    },
+    "team": ["Ana Silva"]
+  },
+  {
+    "id": "998e8400-e29b-41d4-a716-446655440222",
+    "title": {
+      "pt-BR": "Finanças Pessoais",
+      "en": "Personal Finance"
+    },
+    "description": {
+      "pt-BR": "Dashboard para controle de gastos e projeção de investimentos.",
+      "en": "Dashboard for expense control and investment projection."
+    },
+    "technology": "Node.js",
+    "createdAt": "2023-12-01T09:00:00Z",
+    "links": {
+      "github": "https://github.com/usuario/financas",
+      "deploy": "https://financas.com.br"
+    },
+    "pictures": [
+      "/images/projects/finance-charts.png",
+      "/images/projects/finance-login.png"
+    ],
+    "features": {
+      "pt-BR": [
+        "Gráficos interativos",
+        "Exportação de relatórios PDF",
+        "Conciliação bancária"
+      ],
+      "en": ["Interactive charts", "PDF report export", "Bank reconciliation"]
+    },
+    "team": ["Carlos Eduardo", "Fernanda Lima"]
+  }
+]

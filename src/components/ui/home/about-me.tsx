@@ -12,7 +12,7 @@ export function AboutMeSection() {
   return (
     <section
       id='about-me'
-      className='w-full space-y-8 flex flex-col items-center px-5 py-8 rounded-2xl dark:bg-surf1-dark'
+      className='w-full space-y-8 flex flex-col items-center px-5 py-8 rounded-2xl dark:bg-surf1-dark bg-surf1-light shadow-md'
     >
       <h2 className='font-heebo font-medium text-3xl mb-16 text-center'>
         {t('title')}

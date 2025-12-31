@@ -4,25 +4,29 @@ import { useTheme } from 'next-themes'
 import { MoonStar, SunDim } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useLocale } from 'next-intl'
-import { useRouter } from '@/i18n/navigation'
-import { useState } from 'react'
+import { usePathname, useRouter } from '@/i18n/navigation'
+import { useEffect, useState } from 'react'
 
 export function Actions() {
   const [isSwitchingLang, setIsSwitchingLang] = useState(false)
   const { theme, setTheme } = useTheme()
   const locale = useLocale()
   const router = useRouter()
+  const pathname = usePathname()
+
+  useEffect(() => {
+    setIsSwitchingLang(false)
+  }, [locale])
 
   function toggleLocale() {
     if (isSwitchingLang) return
 
     setIsSwitchingLang(true)
 
-    setTimeout(() => {
-      router.replace('/', {
-        locale: locale === 'pt-BR' ? 'en' : 'pt-BR',
-      })
-    }, 100)
+    // O router.replace agora usa o pathname dinâmico
+    router.replace(pathname, {
+      locale: locale === 'pt-BR' ? 'en' : 'pt-BR',
+    })
   }
 
   return (
@@ -58,7 +62,7 @@ export function Actions() {
             transition={{ duration: 0.3 }}
             className='flex justify-center items-center'
           >
-            {locale && locale === 'pt-BR' ? 'EN' : 'PT'}
+            {locale === 'pt-BR' ? 'EN' : 'PT'}
           </motion.div>
         </AnimatePresence>
       </button>

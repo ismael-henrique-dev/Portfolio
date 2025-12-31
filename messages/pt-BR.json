@@ -52,5 +52,15 @@
       "projects": "Projetos",
       "contact": "Entre em contato"
     }
+  },
+  "ProjectDetails": {
+    "back_button": "Voltar",
+    "team_label": "Equipe",
+    "description_label": "Descrição",
+    "features_label": "Features",
+    "sidebar_title": "Dê uma olhada no projeto:",
+    "view_site": "Ver site",
+    "repository": "Repositório",
+    "not_found": "Projeto não encontrado."
   }
 }
