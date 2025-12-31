@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import {
   ArrowLeft,
@@ -9,6 +9,50 @@ import {
 } from 'lucide-react'
 import projectsData from '@/lib/projects.json'
 import { getTranslations } from 'next-intl/server'
+import { Metadata } from 'next'
+
+export async function generateMetadata(props: {
+  params: Promise<{ id: string; locale: string }>
+}): Promise<Metadata> {
+  const { id, locale } = await props.params
+  const currentLocale = (locale === 'en' ? 'en' : 'pt-BR') as 'en' | 'pt-BR'
+
+  // Busca o projeto no JSON
+  const project = projectsData.find((p) => p.id === id) as Project
+
+  if (!project) {
+    return {
+      title: 'Projeto não encontrado',
+    }
+  }
+
+  // Define o título e descrição com base no idioma
+  const title = project.title[currentLocale]
+  const description = project.description[currentLocale]
+
+  return {
+    title: `${title}`,
+    description: description,
+    openGraph: {
+      title: title,
+      description: description,
+      images: [
+        {
+          url: project.pictures[0] || '/default-og-image.png',
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: title,
+      description: description,
+      images: [project.pictures[0] || '/default-og-image.png'],
+    },
+  }
+}
 
 export default async function ProjectDetails(props: {
   params: Promise<{ id: string; locale: string }>
