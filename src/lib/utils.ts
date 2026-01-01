@@ -55,12 +55,35 @@ export const aboutMeItems = [
 ]
 
 export const skills = [
-  { iconUrl: '/techs/html.svg', alt: 'HTML icon logo' },
-  { iconUrl: '/techs/css.svg', alt: 'CSS icon logo' },
-  { iconUrl: '/techs/javascript.svg', alt: 'JavaScript icon logo' },
-  { iconUrl: '/techs/typescript.svg', alt: 'TypeScript icon logo' },
-  { iconUrl: '/techs/nextjs.svg', alt: 'Next.js icon logo' },
-  { iconUrl: '/techs/reactjs.svg', alt: 'React icon logo' },
-  { iconUrl: '/techs/tailwindcss.svg', alt: 'Tailwind CSS icon logo' },
-  { iconUrl: '/techs/git.svg', alt: 'Gui icon logo' },
+  { name: 'html', iconUrl: '/techs/html.svg', alt: 'HTML icon logo' },
+  { name: 'css', iconUrl: '/techs/css.svg', alt: 'CSS icon logo' },
+  {
+    name: 'javascript',
+    iconUrl: '/techs/javascript.svg',
+    alt: 'JavaScript icon logo',
+  },
+  {
+    name: 'typescript',
+    iconUrl: '/techs/typescript.svg',
+    alt: 'TypeScript icon logo',
+  },
+  { name: 'nextjs', iconUrl: '/techs/nextjs.svg', alt: 'Next.js icon logo' },
+  { name: 'reactjs', iconUrl: '/techs/reactjs.svg', alt: 'React icon logo' },
+  {
+    name: 'tailwindcss',
+    iconUrl: '/techs/tailwindcss.svg',
+    alt: 'Tailwind CSS icon logo',
+  },
+  { name: 'git', iconUrl: '/techs/git.svg', alt: 'Git icon logo' },
 ]
+
+export function getProjectSkills(projectTechnology: string) {
+  // Se o seu JSON tiver várias tecnologias separadas por vírgula ou em array
+  // Ex: "nextjs, typescript"
+  const techList = projectTechnology
+    .toLowerCase()
+    .split(',')
+    .map((t) => t.trim())
+
+  return skills.filter((skill) => techList.includes(skill.name.toLowerCase()))
+}

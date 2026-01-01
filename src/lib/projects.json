@@ -1,89 +1,230 @@
 [
   {
-    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "id": "1",
     "title": {
-      "pt-BR": "App de E-commerce",
-      "en": "E-commerce App"
+      "pt-BR": "Calculador de IMC",
+      "en": "BMI Calculator"
     },
     "description": {
-      "pt-BR": "Uma plataforma completa de vendas online com checkout integrado.",
-      "en": "A complete online sales platform with integrated checkout."
+      "pt-BR": "Está preocupado com sua saúde? Então aproveite e faça o calculo do seu indice de massa corporal e veja se está adequado ou não.",
+      "en": "Are you concerned about your health? Take advantage and calculate your body mass index to see if it is adequate or not."
     },
-    "technology": "TypeScript",
-    "createdAt": "2023-10-27T10:30:00Z",
+    "technology": "html, css, javaScript",
+    "createdAt": "08/2023",
     "links": {
-      "github": "https://github.com/usuario/projeto-vendas",
-      "deploy": "https://vendas-online.com"
+      "github": "https://github.com/ismael-henrique-dev/Imc-Calculate",
+      "deploy": "https://imc-calculate-web.vercel.app"
     },
     "pictures": [
-      "/images/projects/ecommerce-thumb.jpg",
-      "/images/projects/ecommerce-dash.png"
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
     ],
     "features": {
       "pt-BR": [
-        "Carrinho de compras",
-        "Pagamento via Pix",
-        "Painel Administrativo"
+        "Calcular IMC",
+        "Limpar os campos de input",
+        "Verificar se o IMC está adequado ou não"
       ],
-      "en": ["Shopping Cart", "Pix Payment", "Admin Panel"]
+      "en": [
+        "Calculate BMI",
+        "Clear input fields",
+        "Check if BMI is adequate or not"
+      ]
     },
-    "team": ["Ana Silva", "Bruno Souza"]
+    "team": ["Ismael Henrique"]
   },
   {
-    "id": "713e8400-e29b-41d4-a716-446655440111",
+    "id": "2",
     "title": {
-      "pt-BR": "Gerenciador de Tarefas",
-      "en": "Task Manager"
+      "pt-BR": "Attendees-NLW-UNITE",
+      "en": "Attendees-NLW-UNITE"
     },
     "description": {
-      "pt-BR": "Gerenciador de tarefas produtivo focado em metodologias ágeis.",
-      "en": "Productive task manager focused on agile methodologies."
+      "pt-BR": "Este é o frontend da aplicação Attendees, desenvolvida durante o evento NLW Unite da Rocketseat. A aplicação permite visualizar e gerenciar a lista de participantes de um evento.",
+      "en": "This is the frontend of the Attendees application, developed during the NLW Unite event by Rocketseat. The application allows you to view and manage the list of event attendees."
     },
-    "technology": "React",
-    "createdAt": "2023-11-15T14:20:00Z",
+    "technology": "reactjs, typescript",
+    "createdAt": "04/2024",
     "links": {
-      "github": "https://github.com/usuario/task-manager",
-      "deploy": "https://mytasks.app"
-    },
-    "pictures": ["/images/projects/tasks-1.jpg"],
-    "features": {
-      "pt-BR": [
-        "Arrastar e Soltar",
-        "Notificações em tempo real",
-        "Modo Escuro"
-      ],
-      "en": ["Drag and Drop", "Real-time notifications", "Dark Mode"]
-    },
-    "team": ["Ana Silva"]
-  },
-  {
-    "id": "998e8400-e29b-41d4-a716-446655440222",
-    "title": {
-      "pt-BR": "Finanças Pessoais",
-      "en": "Personal Finance"
-    },
-    "description": {
-      "pt-BR": "Dashboard para controle de gastos e projeção de investimentos.",
-      "en": "Dashboard for expense control and investment projection."
-    },
-    "technology": "Node.js",
-    "createdAt": "2023-12-01T09:00:00Z",
-    "links": {
-      "github": "https://github.com/usuario/financas",
-      "deploy": "https://financas.com.br"
+      "github": "https://github.com/ismael-henrique-dev/Attendees-NLW-UNITE",
+      "deploy": "https://attendees-nlw-unite.vercel.app"
     },
     "pictures": [
-      "/images/projects/finance-charts.png",
-      "/images/projects/finance-login.png"
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
     ],
     "features": {
       "pt-BR": [
-        "Gráficos interativos",
-        "Exportação de relatórios PDF",
-        "Conciliação bancária"
+        "Listagem de Participantes: Exibe uma lista paginada de participantes do evento.",
+        "Busca: Permite buscar participantes pelo nome.",
+        "Paginação: Navegação entre páginas de resultados."
       ],
-      "en": ["Interactive charts", "PDF report export", "Bank reconciliation"]
+      "en": [
+        "List Participants: Displays a paginated list of event participants.",
+        "Search: Allows searching for participants by name.",
+        "Pagination: Navigation between result pages."
+      ]
     },
-    "team": ["Carlos Eduardo", "Fernanda Lima"]
+    "team": ["Ismael Henrique"]
+  },
+  {
+    "id": "3",
+    "title": {
+      "pt-BR": "Ignite Feed",
+      "en": "Ignite Feed"
+    },
+    "description": {
+      "pt-BR": "Este é um projeto de feed social desenvolvido com React.js e Vite, parte do curso Ignite da Rocketseat. O projeto simula um feed de posts onde usuários podem publicar conteúdo e interagir com comentários.",
+      "en": "This is a social feed project developed with React.js and Vite, part of the Ignite course by Rocketseat. The project simulates a post feed where users can publish content and interact with comments."
+    },
+    "technology": "javascript, reactjs",
+    "createdAt": "06/2024",
+    "links": {
+      "github": "https://github.com/ismael-henrique-dev/Ignite-feed-reactjs-nivel01",
+      "deploy": "https://ignite-feed-reactjs-nivel01.vercel.app"
+    },
+    "pictures": [
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+    ],
+    "features": {
+      "pt-BR": ["Comentários em posts", "Curtir posts", "Deletar comentários"],
+      "en": ["Comments on posts", "Like posts", "Delete comments"]
+    },
+    "team": ["Ismael Henrique"]
+  },
+  {
+    "id": "4",
+    "title": {
+      "pt-BR": "Ignite Timer",
+      "en": "Ignite Timer"
+    },
+    "description": {
+      "pt-BR": "Este é um projeto de timer desenvolvido com React.js e Vite, parte do curso Ignite da Rocketseat. O projeto simula um timer com histórico de ciclos com seus status.",
+      "en": "This is a timer project developed with React.js and Vite, part of the Ignite course by Rocketseat. The project simulates a timer with a history of cycles with their statuses."
+    },
+    "technology": "typescript, reactjs",
+    "createdAt": "07/2024",
+    "links": {
+      "github": "https://github.com/ismael-henrique-dev/ignite-timer-reactjs-nivel02",
+      "deploy": "https://ignite-timer-reactjs-nivel02.vercel.app"
+    },
+    "pictures": [
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+    ],
+    "features": {
+      "pt-BR": ["Definir ciclos", "Pausar", "Ver histórico de ciclos"],
+      "en": ["Define cycles", "Pause", "View cycle history"]
+    },
+    "team": ["Ismael Henrique"]
+  },
+  {
+    "id": "5",
+    "title": {
+      "pt-BR": "DT-Money",
+      "en": "DT-Money"
+    },
+    "description": {
+      "pt-BR": "Projeto de controle financeiro desenvolvido com React.js e Vite, parte do curso Ignite da Rocketseat. O projeto permite registrar entradas e saídas financeiras, exibindo um resumo das transações.",
+      "en": "Financial control project developed with React.js and Vite, part of the Ignite course by Rocketseat. The project allows recording financial income and expenses, displaying a summary of transactions."
+    },
+    "technology": "typescript, reactjs",
+    "createdAt": "09/2024",
+    "links": {
+      "github": "https://github.com/ismael-henrique-dev/03-Dt-Money",
+      "deploy": "https://03-dt-money-roan.vercel.app"
+    },
+    "pictures": [
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+    ],
+    "features": {
+      "pt-BR": ["Criar transações", "Buscar", "Ver histórico de transações"],
+      "en": ["Create transactions", "Search", "View transaction history"]
+    },
+    "team": ["Ismael Henrique"]
+  },
+  {
+    "id": "6",
+    "title": {
+      "pt-BR": "In.Orbit",
+      "en": "In.Orbit"
+    },
+    "description": {
+      "pt-BR": "O in.orbit é um site com o objetivo de fascilitar o gerenciamento de metas pessoais. Este é um projeto com autoria da Rocketseat desenvolvido durante o evento NLW Pocket.",
+      "en": "In.orbit is a website aimed at facilitating the management of personal goals. This is a project authored by Rocketseat developed during the NLW Pocket event."
+    },
+    "technology": "typescript, reactjs, tailwindcss",
+    "createdAt": "09/2024",
+    "links": {
+      "github": "https://github.com/ismael-henrique-dev/nlw-pocket-full-stack-reactjs",
+      "deploy": "https://nlw-pocket-full-stack-reactjs.vercel.app/"
+    },
+    "pictures": [
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+    ],
+    "features": {
+      "pt-BR": ["Criar transações", "Buscar", "Ver histórico de transações"],
+      "en": ["Create transactions", "Search", "View transaction history"]
+    },
+    "team": ["Ismael Henrique"]
+  },
+  {
+    "id": "7",
+    "title": {
+      "pt-BR": "NLW Connect",
+      "en": "NLW Connect"
+    },
+    "description": {
+      "pt-BR": "A aplicação é focada em facilitar a inscrição no CodeCraft Summit 2025, com um design moderno e funcionalidades extras como programa de indicação e gamificação. Esse projeto foi desenvolvido atrevés do NLW Pocket oferecido pela Rocketseat.",
+      "en": "The application focuses on facilitating registration for CodeCraft Summit 2025, featuring a modern design and additional functionalities such as a referral program and gamification. This project was developed through NLW Pocket offered by Rocketseat."
+    },
+    "technology": "typescript, nextjs, tailwindcss",
+    "createdAt": "09/2024",
+    "links": {
+      "github": "https://github.com/ismael-henrique-dev/Nlw-Connect-Nextjs",
+      "deploy": "https://nlw-connect-nextjs-nine.vercel.app"
+    },
+    "pictures": [
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+    ],
+    "features": {
+      "pt-BR": ["Criar transações", "Buscar", "Ver histórico de transações"],
+      "en": ["Create transactions", "Search", "View transaction history"]
+    },
+    "team": ["Ismael Henrique"]
+  },
+  {
+    "id": "8",
+    "title": {
+      "pt-BR": "Grocery Store",
+      "en": "Grocery Store"
+    },
+    "description": {
+      "pt-BR": "Grocery Store é uma simulação de ecommerce online com o objetivo de trazer praticidade para o cliente, podendo ele comprar seus alimentos diretamente de seu dispositivo.",
+      "en": "Grocery Store is an online ecommerce simulation aimed at providing convenience to customers, allowing them to purchase their groceries directly from their device."
+    },
+    "technology": "typescript, reactjs, tailwindcss",
+    "createdAt": "04/2024",
+    "links": {
+      "github": "https://github.com/ismael-henrique-dev/Grocery-Store",
+      "deploy": "https://grocery-store-web.vercel.app"
+    },
+    "pictures": [
+      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+    ],
+    "features": {
+      "pt-BR": [
+        "Pesquisa por nome do produto",
+        "Filtragem por categoria ou preço do produto",
+        "Adicionar/remover produtos específicos ao carrinho de compras",
+        "Remover todos os produtos do carrinho de compras",
+        "Alterar quantidade de produtos no carrinho"
+      ],
+      "en": [
+        "Search by product name",
+        "Filtering by category or product price",
+        "Add/remove specific products to/from the shopping cart",
+        "Remove all products from the shopping cart",
+        "Change quantity of products in the cart"
+      ]
+    },
+    "team": ["Ismael Henrique"]
   }
 ]

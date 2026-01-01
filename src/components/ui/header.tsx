@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { navLinks } from '@/lib/utils'
 import { Actions } from './actions'
-import { motion } from 'motion/react'
 import { Drawer, DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 import { Menu } from 'lucide-react'
 import { DialogTitle } from '@radix-ui/react-dialog'
@@ -13,12 +12,7 @@ export function Header() {
   const t = useTranslations('HomePage.nav')
 
   return (
-    <motion.header
-      className='flex items-center justify-between w-full px-6 md:px-16 py-6 bg-light dark:bg-dark'
-      initial={{ translateY: -100 }}
-      animate={{ translateY: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <header className='flex items-center justify-between w-full px-6 md:px-16 py-6 bg-light dark:bg-dark'>
       <nav className='hidden lg:flex flex-wrap items-center gap-8 text-zinc-800 dark:text-zinc-100'>
         {navLinks.map((link) => (
           <Link
@@ -59,6 +53,6 @@ export function Header() {
       </Drawer>
 
       <Actions />
-    </motion.header>
+    </header>
   )
 }

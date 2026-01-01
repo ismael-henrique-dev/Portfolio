@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   ArrowLeft,
@@ -10,6 +10,7 @@ import {
 import projectsData from '@/lib/projects.json'
 import { getTranslations } from 'next-intl/server'
 import { Metadata } from 'next'
+import { getProjectSkills } from '@/lib/utils'
 
 export async function generateMetadata(props: {
   params: Promise<{ id: string; locale: string }>
@@ -68,6 +69,8 @@ export default async function ProjectDetails(props: {
 
   const currentLocale = (locale === 'en' ? 'en' : 'pt-BR') as 'en' | 'pt-BR'
 
+  const projectSkills = getProjectSkills(project.technology)
+
   return (
     <main className='min-h-screen bg-light dark:bg-dark lg:px-16 px-5 pb-5 space-y-8 w-full'>
       {/* Botão Voltar */}
@@ -84,18 +87,18 @@ export default async function ProjectDetails(props: {
           <article className='dark:bg-surf1-dark bg-white rounded-3xl overflow-hidden shadow-xl'>
             {/* Carousel Mock (Simulado) */}
             <div className='relative h-[400px] w-full bg-gradient-to-r from-purple-400 to-emerald-300 flex items-center justify-center group'>
-              {/* <Image
+              <Image
                 src={project.pictures[0]}
-                alt={project.title}
+                alt={project.title[currentLocale]}
                 fill
                 className='object-contain p-8'
-              /> */}
+              />
 
               {/* Controles do Carrossel */}
-              <button className='absolute left-4 p-2 rounded-lg bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity'>
+              <button className='absolute left-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity'>
                 <ChevronLeft size={24} />
               </button>
-              <button className='absolute right-4 p-2 rounded-lg bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity'>
+              <button className='absolute right-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity'>
                 <ChevronRight size={24} />
               </button>
             </div>
@@ -108,8 +111,16 @@ export default async function ProjectDetails(props: {
                 </time>
                 <div className='flex gap-3'>
                   {/* Aqui você pode mapear os ícones das tecnologias */}
-                  <span className='text-blue-400'>●</span>
-                  <span className='text-purple-400'>▲</span>
+                  {projectSkills.map((skill) => (
+                    <Image
+                      key={skill.name}
+                      src={skill.iconUrl}
+                      alt={skill.alt}
+                      width={24}
+                      height={24}
+                      title={skill.name} // Mostra o nome ao passar o mouse
+                    />
+                  ))}
                 </div>
               </div>
 
@@ -117,19 +128,19 @@ export default async function ProjectDetails(props: {
                 {project.title[currentLocale]}
               </h1>
 
-              <div className='space-y-4 text-zinc-300 font-heebo leading-relaxed'>
+              <div className='space-y-4 font-heebo leading-relaxed'>
                 <p>
-                  <strong className='text-white'>Equipe: </strong>
+                  <strong>Equipe: </strong>
                   {project.team.join(', ')}
                 </p>
 
                 <p>
-                  <strong className='text-white'>Descrição: </strong>
+                  <strong>Descrição: </strong>
                   {project.description[currentLocale]}
                 </p>
 
                 <div className='space-y-2'>
-                  <h3 className='font-bold text-white'>Features:</h3>
+                  <h3 className='font-bold'>Features:</h3>
                   <ul className='list-disc list-inside space-y-1'>
                     {project.features[currentLocale].map((feature) => (
                       <li key={feature}>{feature}</li>
