@@ -18,7 +18,7 @@ export function AboutMeSection() {
         {t('title')}
       </h2>
 
-      <div className='w-full justify-center lg:space-x-16 lg:items-start items-center flex flex-col xl:flex-row  gap-12'>
+      <div className='w-full justify-center lg:space-x-16 lg:items-start items-center flex flex-col xl:flex-row gap-20'>
         {/* Avatar */}
         <motion.div
           // initial={{ opacity: 0, x: -200, scale: 0.5 }}
@@ -28,10 +28,10 @@ export function AboutMeSection() {
           className='origin-center'
         >
           <Image
-            className='w-[300px] h-[300px]   xl:h-[440px] mb-6 lg:mb-0 rounded-lg object-cover'
+            className='w-[400px] h-[300px]   xl:h-[440px] mb-6 lg:mb-0 rounded-lg object-cover'
             width={440}
             height={440}
-            src={'/images/avatar.svg'}
+            src={'/images/about.jpg'}
             alt='Foto de perfil do Ismael Henrique'
           />
         </motion.div>

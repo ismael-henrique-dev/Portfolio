@@ -20,10 +20,10 @@ export function HeroSection() {
         className='origin-center'
       >
         <Image
-          className='w-[300px] h-[300px] lg:w-[384px] lg:h-[384px] mb-6 lg:mb-0 rounded-lg object-cover'
+          className='w-[300px] h-[300px] lg:w-[384px] lg:h-[384px] mb-6 lg:mb-0 rounded-full object-cover'
           width={384}
           height={384}
-          src={'./images/avatar.svg'}
+          src='/images/hero.jpg'
           alt='Foto de perfil do Ismael Henrique'
         />
       </motion.div>
