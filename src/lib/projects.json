@@ -16,7 +16,9 @@
       "deploy": "https://imc-calculate-web.vercel.app"
     },
     "pictures": [
-      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+      "https://drive.google.com/uc?export=view&id=167tQRrm7IgFfIxUghj47dXJgx2x6gYoH",
+      "https://drive.google.com/uc?export=view&id=17H2OtJI7Bw3khfuBToNjZXV9jZWSe8jB",
+      "https://drive.google.com/uc?export=view&id=11R2v6_ECs0eeJLvUMUMmmsyOTVBq4YR1"
     ],
     "features": {
       "pt-BR": [
@@ -35,8 +37,8 @@
   {
     "id": "2",
     "title": {
-      "pt-BR": "Attendees-NLW-UNITE",
-      "en": "Attendees-NLW-UNITE"
+      "pt-BR": "Attendees | NLW-UNITE",
+      "en": "Attendees | NLW-UNITE"
     },
     "description": {
       "pt-BR": "Este é o frontend da aplicação Attendees, desenvolvida durante o evento NLW Unite da Rocketseat. A aplicação permite visualizar e gerenciar a lista de participantes de um evento.",
@@ -49,7 +51,8 @@
       "deploy": "https://attendees-nlw-unite.vercel.app"
     },
     "pictures": [
-      "https://drive.google.com/uc?export=view&id=1Y3nos5u0mU-PGaKJi1W4mlobyzvsZHoZ"
+      "https://drive.google.com/uc?export=view&id=1Y3nos5u0mU-PGaKJi1W4mlobyzvsZHoZ",
+      "https://drive.google.com/uc?export=view&id=1tV86TtW33R5ijjcnVvx3WBewKijMais6"
     ],
     "features": {
       "pt-BR": [
@@ -82,7 +85,8 @@
       "deploy": "https://ignite-feed-reactjs-nivel01.vercel.app"
     },
     "pictures": [
-      "https://drive.google.com/uc?export=view&id=1Axw6MjFt9vVCiYowv9YSIgjFhHiew87y"
+      "https://drive.google.com/uc?export=view&id=1Axw6MjFt9vVCiYowv9YSIgjFhHiew87y",
+      "https://drive.google.com/uc?export=view&id=1_7k21TSPgexggO1nMYvQ_zRJVJzE5Nqy"
     ],
     "features": {
       "pt-BR": ["Comentários em posts", "Curtir posts", "Deletar comentários"],
@@ -107,7 +111,9 @@
       "deploy": "https://ignite-timer-reactjs-nivel02.vercel.app"
     },
     "pictures": [
-      "https://drive.google.com/uc?export=view&id=1QYKMyT0OPyZvE4JYbktg2FK4Jo04HY-m"
+      "https://drive.google.com/uc?export=view&id=1QYKMyT0OPyZvE4JYbktg2FK4Jo04HY-m",
+      "https://drive.google.com/uc?export=view&id=1f1vx2kK9cNaMgf0ycrTv_lqGLDpI1OJC",
+      "https://drive.google.com/uc?export=view&id=1ecMb1p_vHfDgpUETWNLN9uQd6WVz5BAA"
     ],
     "features": {
       "pt-BR": ["Definir ciclos", "Pausar", "Ver histórico de ciclos"],
@@ -132,7 +138,10 @@
       "deploy": "https://03-dt-money-roan.vercel.app"
     },
     "pictures": [
-      "https://drive.google.com/uc?export=view&id=1IzfTuDg95U35ay8gVb4PBwBpVy0P0n_m"
+      "https://drive.google.com/uc?export=view&id=1IzfTuDg95U35ay8gVb4PBwBpVy0P0n_m",
+      "https://drive.google.com/uc?export=view&id=1Qs2TvuvNtj5t5QP4Ki9-5mU7eg-t4qVF",
+      "https://drive.google.com/uc?export=view&id=1716jY8o9ErArIMq_5oy5IC80WkvUJtYa",
+      "https://drive.google.com/uc?export=view&id=1dw1y5xXX_gGh8eyFnODPI16CZ20dsozC"
     ],
     "features": {
       "pt-BR": ["Criar transações", "Buscar", "Ver histórico de transações"],
@@ -157,11 +166,25 @@
       "deploy": "https://nlw-pocket-full-stack-reactjs.vercel.app/"
     },
     "pictures": [
-      "https://drive.google.com/uc?export=view&id=1OMOykey8l6ralmIXAA0owW7KUrCY7FXL"
+      "https://drive.google.com/uc?export=view&id=1OMOykey8l6ralmIXAA0owW7KUrCY7FXL",
+      "https://drive.google.com/uc?export=view&id=13U2HaaWWd9MJi1DwaFNqYrGovacN6t8Y",
+      "https://drive.google.com/uc?export=view&id=1Jg5iCQ29qcKlpbxQlO-2cXrokEQAi0ei",
+      "https://drive.google.com/uc?export=view&id=1LsTwPGDc3vn__hXOC4XUTN6zjTlmW81d",
+      "https://drive.google.com/uc?export=view&id=1k3jUm9oIOmGhy8xcJKWov23zBfWnXZY9"
     ],
     "features": {
-      "pt-BR": ["Criar transações", "Buscar", "Ver histórico de transações"],
-      "en": ["Create transactions", "Search", "View transaction history"]
+      "pt-BR": [
+        "Realizar fetch de metas: Listagem e recuperação das metas configuradas pelo utilizador.",
+        "Criar novas metas: Registo de novos objetivos com definição de frequência semanal.",
+        "Completar metas: Marcar metas como concluídas ao longo do dia/semana.",
+        "Ver progresso semanal: Visualização gráfica ou estatística do desempenho e metas atingidas na semana."
+      ],
+      "en": [
+        "Fetch goals: Listing and retrieving goals set by the user.",
+        "Create new goals: Register new objectives with weekly frequency definition.",
+        "Complete goals: Mark goals as completed throughout the day/week.",
+        "View weekly progress: Graphical or statistical visualization of performance and goals achieved during the week."
+      ]
     },
     "team": ["Ismael Henrique"]
   },
@@ -182,11 +205,25 @@
       "deploy": "https://nlw-connect-nextjs-nine.vercel.app"
     },
     "pictures": [
-      "https://drive.google.com/uc?export=view&id=1EzZ6zQ3lGAIMwHY5EJDHki62A0o7ogeJ"
+      "https://drive.google.com/uc?export=view&id=1EzZ6zQ3lGAIMwHY5EJDHki62A0o7ogeJ",
+      "https://drive.google.com/uc?export=view&id=1nV3OiiIRJV3wjhBdAFDpv20Y0ykEDNqo",
+      "https://drive.google.com/uc?export=view&id=1OjcBAPNha4ZJvsQmsKJDE6Q8WWAafpnt",
+      "https://drive.google.com/uc?export=view&id=1utC5nQ5Nxy5YgozD66lleaXLavyvt5G1",
+      "https://drive.google.com/uc?export=view&id=1MzPKur4iIWWO0fZcz8QsMoEXskjPANHE"
     ],
     "features": {
-      "pt-BR": ["Criar transações", "Buscar", "Ver histórico de transações"],
-      "en": ["Create transactions", "Search", "View transaction history"]
+      "pt-BR": [
+        "Inscrição no evento: Simulação completa do processo de registo para o CodeCraft Summit 2025.",
+        "Sistema de Indicação (Referral): Geração de links únicos para convidar outros participantes.",
+        "Visualização de Ranking: Sistema de gamificação onde é possível ver quem atraiu mais inscritos através do seu link.",
+        "Monitorização de Cliques/Inscrições: (Implícito no ranking) Contagem em tempo real das interações com o link de convite."
+      ],
+      "en": [
+        "Event Registration: Complete simulation of the registration process for CodeCraft Summit 2025.",
+        "Referral System: Generation of unique links to invite other participants.",
+        "Ranking View: Gamification system where you can see who attracted the most registrants through their link.",
+        "Click/Registration Tracking: (Implicit in ranking) Real-time counting of interactions with the invitation link."
+      ]
     },
     "team": ["Ismael Henrique"]
   },
@@ -207,7 +244,10 @@
       "deploy": "https://grocery-store-web.vercel.app"
     },
     "pictures": [
-      "https://github.com/ismael-henrique-dev/Imc-Calculate/blob/main/emUso.png?raw=true"
+      "https://drive.google.com/uc?export=view&id=1hDLXyseodsykK4eqHOxOlouS4aHhJwDV",
+      "https://drive.google.com/uc?export=view&id=1PqEKw7Jw1IWEgdvsK1uvRSboU59heWIi",
+      "https://drive.google.com/uc?export=view&id=1mR7H108qsf_aHmqoMWurDs3coNcojsgZ",
+      "https://drive.google.com/uc?export=view&id=1ytPL9xEeIyHJPG1Q394hyQcvSclyOlNP"
     ],
     "features": {
       "pt-BR": [
