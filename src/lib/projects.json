@@ -9,7 +9,7 @@
       "pt-BR": "Está preocupado com sua saúde? Então aproveite e faça o calculo do seu indice de massa corporal e veja se está adequado ou não.",
       "en": "Are you concerned about your health? Take advantage and calculate your body mass index to see if it is adequate or not."
     },
-    "technology": "html, css, javaScript",
+    "technologies": ["html", "css", "javascript"],
     "createdAt": "08/2023",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/Imc-Calculate",
@@ -42,7 +42,7 @@
       "pt-BR": "Este é o frontend da aplicação Attendees, desenvolvida durante o evento NLW Unite da Rocketseat. A aplicação permite visualizar e gerenciar a lista de participantes de um evento.",
       "en": "This is the frontend of the Attendees application, developed during the NLW Unite event by Rocketseat. The application allows you to view and manage the list of event attendees."
     },
-    "technology": "reactjs, typescript",
+    "technologies": ["reactjs", "typescript"],
     "createdAt": "04/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/Attendees-NLW-UNITE",
@@ -75,7 +75,7 @@
       "pt-BR": "Este é um projeto de feed social desenvolvido com React.js e Vite, parte do curso Ignite da Rocketseat. O projeto simula um feed de posts onde usuários podem publicar conteúdo e interagir com comentários.",
       "en": "This is a social feed project developed with React.js and Vite, part of the Ignite course by Rocketseat. The project simulates a post feed where users can publish content and interact with comments."
     },
-    "technology": "javascript, reactjs",
+    "technologies": ["javascript", "reactjs"],
     "createdAt": "06/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/Ignite-feed-reactjs-nivel01",
@@ -100,7 +100,7 @@
       "pt-BR": "Este é um projeto de timer desenvolvido com React.js e Vite, parte do curso Ignite da Rocketseat. O projeto simula um timer com histórico de ciclos com seus status.",
       "en": "This is a timer project developed with React.js and Vite, part of the Ignite course by Rocketseat. The project simulates a timer with a history of cycles with their statuses."
     },
-    "technology": "typescript, reactjs",
+    "technologies": ["typescript", "reactjs"],
     "createdAt": "07/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/ignite-timer-reactjs-nivel02",
@@ -125,7 +125,7 @@
       "pt-BR": "Projeto de controle financeiro desenvolvido com React.js e Vite, parte do curso Ignite da Rocketseat. O projeto permite registrar entradas e saídas financeiras, exibindo um resumo das transações.",
       "en": "Financial control project developed with React.js and Vite, part of the Ignite course by Rocketseat. The project allows recording financial income and expenses, displaying a summary of transactions."
     },
-    "technology": "typescript, reactjs",
+    "technologies": ["typescript", "reactjs"],
     "createdAt": "09/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/03-Dt-Money",
@@ -150,7 +150,7 @@
       "pt-BR": "O in.orbit é um site com o objetivo de fascilitar o gerenciamento de metas pessoais. Este é um projeto com autoria da Rocketseat desenvolvido durante o evento NLW Pocket.",
       "en": "In.orbit is a website aimed at facilitating the management of personal goals. This is a project authored by Rocketseat developed during the NLW Pocket event."
     },
-    "technology": "typescript, reactjs, tailwindcss",
+    "technologies": ["typescript", "reactjs", "tailwindcss"],
     "createdAt": "09/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/nlw-pocket-full-stack-reactjs",
@@ -175,7 +175,7 @@
       "pt-BR": "A aplicação é focada em facilitar a inscrição no CodeCraft Summit 2025, com um design moderno e funcionalidades extras como programa de indicação e gamificação. Esse projeto foi desenvolvido atrevés do NLW Pocket oferecido pela Rocketseat.",
       "en": "The application focuses on facilitating registration for CodeCraft Summit 2025, featuring a modern design and additional functionalities such as a referral program and gamification. This project was developed through NLW Pocket offered by Rocketseat."
     },
-    "technology": "typescript, nextjs, tailwindcss",
+    "technologies": ["typescript", "nextjs", "tailwindcss"],
     "createdAt": "09/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/Nlw-Connect-Nextjs",
@@ -200,7 +200,7 @@
       "pt-BR": "Grocery Store é uma simulação de ecommerce online com o objetivo de trazer praticidade para o cliente, podendo ele comprar seus alimentos diretamente de seu dispositivo.",
       "en": "Grocery Store is an online ecommerce simulation aimed at providing convenience to customers, allowing them to purchase their groceries directly from their device."
     },
-    "technology": "typescript, reactjs, tailwindcss",
+    "technologies": ["typescript", "reactjs", "tailwindcss"],
     "createdAt": "04/2024",
     "links": {
       "github": "https://github.com/ismael-henrique-dev/Grocery-Store",

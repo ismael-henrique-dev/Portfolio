@@ -64,7 +64,7 @@ export default async function ProjectDetails(props: {
 
   const currentLocale = (locale === 'en' ? 'en' : 'pt-BR') as 'en' | 'pt-BR'
 
-  const projectSkills = getProjectSkills(project.technology)
+  const projectSkills = getProjectSkills(project.technologies)
 
   const hasDeployLink = !!project.links.deploy
 

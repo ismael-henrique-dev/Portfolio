@@ -1,14 +1,14 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { motion } from 'motion/react'
 import { socialLinks } from '@/lib/utils'
 import { Button } from '../button'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
 
 export function HeroSection() {
-  const t = useTranslations('HomePage.hero')
+  const translate = useTranslations('HomePage.hero')
 
   return (
     <section className='flex flex-col items-center gap-6'>
@@ -39,9 +39,11 @@ export function HeroSection() {
           Ismael Henrique
         </h2>
         <span className='font-lato font-semibold tracking-wide lg:text-2xl text-xl'>
-          {t('role')}
+          {translate('role')}
         </span>
-        <p className='font-heebo text-base font-normal'>{t('description')}</p>
+        <p className='font-heebo text-base font-normal'>
+          {translate('description')}
+        </p>
       </motion.div>
 
       <div className='flex gap-4 text-lg mb-4'>
@@ -61,7 +63,14 @@ export function HeroSection() {
         })}
       </div>
 
-      <Button variant='blue'>Download CV</Button>
+      <a
+        href='/curriculum.pdf'
+        download='Curriculo_Ismael_Henrique.pdf'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <Button variant='blue'>{translate('cv_button')}</Button>
+      </a>
     </section>
   )
 }

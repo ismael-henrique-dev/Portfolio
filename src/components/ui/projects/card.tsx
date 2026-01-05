@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const locale = useLocale() as 'pt-BR' | 'en'
-  const projectSkills = getProjectSkills(project.technology)
+  const projectSkills = getProjectSkills(project.technologies)
 
   return (
     <article className='group relative dark:bg-surf1-dark bg-surf1-light w-full p-6 space-y-6 rounded-2xl shadow-sm transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 border border-transparent hover:border-blue-700'>

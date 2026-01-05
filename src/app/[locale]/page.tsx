@@ -26,12 +26,17 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Home() {
+export default async function Home(props: {
+  searchParams: Promise<{ tech?: string }> 
+}) {
+  const searchParams = await props.searchParams
+  const tech = searchParams.tech || 'all'
+
   return (
     <main className='grid gap-16 items-center w-full lg:px-16 lg:pb-16 p-5 '>
       <HeroSection />
       <AboutMeSection />
-      <ProjectsSection />
+      <ProjectsSection tech={tech} />
       <ContactMeSection />
     </main>
   )

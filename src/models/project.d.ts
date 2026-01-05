@@ -12,7 +12,7 @@ type Project = {
   id: string
   title: LocaleString
   description: LocaleString
-  technology: string
+  technologies: string[]
   createdAt: string
   links: { github: string; deploy?: string }
   pictures: string[]

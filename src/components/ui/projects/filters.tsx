@@ -14,7 +14,7 @@ const options = [
 ]
 
 export function Filters() {
-  const t = useTranslations('HomePage.projects.filters')
+  const translate = useTranslations('HomePage.projects.filters')
 
   const searchParams = useSearchParams()
   const pathname = usePathname()
@@ -47,7 +47,7 @@ export function Filters() {
           onClick={() => handleSelectTech(option.value)}
         >
           {option.value === 'all'
-            ? t('all')
+            ? translate('all')
             : option.value.charAt(0).toUpperCase() + option.value.slice(1)}
         </Button>
       ))}

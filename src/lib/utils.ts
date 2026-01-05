@@ -77,13 +77,17 @@ export const skills = [
   { name: 'git', iconUrl: '/techs/git.svg', alt: 'Git icon logo' },
 ]
 
-export function getProjectSkills(projectTechnology: string) {
-  // Se o seu JSON tiver várias tecnologias separadas por vírgula ou em array
-  // Ex: "nextjs, typescript"
-  const techList = projectTechnology
-    .toLowerCase()
-    .split(',')
-    .map((t) => t.trim())
+export function getProjectSkills(projectTechnologies: string[] | undefined) {
+  // 1. Verificação de segurança: se não for um array ou estiver vazio, retorna vazio.
+  if (!projectTechnologies || !Array.isArray(projectTechnologies)) {
+    return []
+  }
 
-  return skills.filter((skill) => techList.includes(skill.name.toLowerCase()))
+  // 2. Normaliza as tecnologias do projeto para minúsculo para comparação precisa.
+  const normalizedProjectTechs = projectTechnologies.map((t) => t.toLowerCase())
+
+  // 3. Filtra o array de skills global.
+  return skills.filter((skill) =>
+    normalizedProjectTechs.includes(skill.name.toLowerCase())
+  )
 }
