@@ -1,16 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import {
-  ArrowLeft,
-  Github,
-  Globe,
-  ChevronLeft,
-  ChevronRight,
-} from 'lucide-react'
-import projectsData from '@/lib/projects.json'
+import { ArrowLeft, Github, Globe } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { Metadata } from 'next'
 import { getProjectSkills } from '@/lib/utils'
+import { ProjectCarousel } from '@/components/ui/projects/caroucel'
+import projectsData from '@/lib/projects.json'
 
 export async function generateMetadata(props: {
   params: Promise<{ id: string; locale: string }>
@@ -59,7 +54,7 @@ export default async function ProjectDetails(props: {
   params: Promise<{ id: string; locale: string }>
 }) {
   const { id, locale } = await props.params
-  const t = await getTranslations('ProjectDetails')
+  const translate = await getTranslations('ProjectDetails')
 
   const project = projectsData.find((p) => p.id === id) as Project
 
@@ -71,11 +66,13 @@ export default async function ProjectDetails(props: {
 
   const projectSkills = getProjectSkills(project.technology)
 
+  const hasDeployLink = !!project.links.deploy
+
   return (
     <main className='min-h-screen bg-light dark:bg-dark lg:px-16 px-5 pb-5 space-y-8 w-full'>
       {/* Botão Voltar */}
       <Link
-        href='/'
+        href='/#projects'
         className='inline-flex items-center justify-center w-10 h-10 rounded-lg shadow-lg dark:bg-surf1-dark bg-white  transition-colors'
       >
         <ArrowLeft size={20} />
@@ -86,22 +83,10 @@ export default async function ProjectDetails(props: {
         <div className='space-y-6'>
           <article className='dark:bg-surf1-dark bg-white rounded-3xl overflow-hidden shadow-xl'>
             {/* Carousel Mock (Simulado) */}
-            <div className='relative h-[400px] w-full bg-gradient-to-r from-purple-400 to-emerald-300 flex items-center justify-center group'>
-              <Image
-                src={project.pictures[0]}
-                alt={project.title[currentLocale]}
-                fill
-                className='object-contain p-8'
-              />
-
-              {/* Controles do Carrossel */}
-              <button className='absolute left-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity'>
-                <ChevronLeft size={24} />
-              </button>
-              <button className='absolute right-4 p-2 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity'>
-                <ChevronRight size={24} />
-              </button>
-            </div>
+            <ProjectCarousel
+              images={project.pictures}
+              title={project.title[currentLocale]}
+            />
 
             {/* Texto e Detalhes */}
             <div className='p-8 space-y-6'>
@@ -156,18 +141,20 @@ export default async function ProjectDetails(props: {
         <aside>
           <div className='dark:bg-surf1-dark bg-white p-8 rounded-3xl shadow-xl sticky top-8 space-y-6'>
             <h3 className='text-lg font-medium font-heebo'>
-              {t('sidebar_title')}
+              {translate('sidebar_title')}
             </h3>
 
             <div className='flex flex-col gap-4'>
-              <Link
-                href={project.links.deploy}
-                target='_blank'
-                className='flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-medium transition-all'
-              >
-                <Globe size={20} />
-                {t('view_site')}
-              </Link>
+              {hasDeployLink && (
+                <Link
+                  href={project.links.deploy as string}
+                  target='_blank'
+                  className='flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-medium transition-all'
+                >
+                  <Globe size={20} />
+                  {translate('view_site')}
+                </Link>
+              )}
 
               <Link
                 href={project.links.github}
@@ -175,7 +162,7 @@ export default async function ProjectDetails(props: {
                 className='flex items-center justify-center gap-2 bg-surf2-dark hover:bg-zinc-700 text-white py-3 rounded-md font-medium transition-all'
               >
                 <Github size={20} />
-                {t('repository')}
+                {translate('repository')}
               </Link>
             </div>
           </div>

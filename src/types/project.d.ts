@@ -14,7 +14,7 @@ type Project = {
   description: LocaleString
   technology: string
   createdAt: string
-  links: { github: string; deploy: string }
+  links: { github: string; deploy?: string }
   pictures: string[]
   features: LocaleArray
   team: string[]
